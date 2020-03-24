@@ -12,8 +12,8 @@ head
   // Favicon
   link(rel='shortcut icon' href='img/favicon.ico')
   // Google Fonts
-  link(href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800' rel='stylesheet')
-  link(href='https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900' rel='stylesheet')
+  // link(href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800' rel='stylesheet')
+  // link(href='https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900' rel='stylesheet')
   // Plugins
   link(rel='stylesheet' href='css/plugins.css')
   // Core Style Css
@@ -44,7 +44,7 @@ nav.navbar.navbar-expand-lg
   .container
     // Logo
     a.logo(href='#')
-      img(src='img/logo-light.png' alt='logo')
+      img(src='img2/logoF.PNG' alt='logo')
     button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
       span.icon-bar
         i.fas.fa-bars
@@ -52,91 +52,99 @@ nav.navbar.navbar-expand-lg
     #navbarSupportedContent.collapse.navbar-collapse
       ul.navbar-nav.ml-auto
         li.nav-item
-          a.nav-link.active(href='#' data-scroll-nav='0') Home
+          a.nav-link.active(href='#' data-scroll-nav='0') Inicio
         li.nav-item
-          a.nav-link(href='#' data-scroll-nav='1') Services
+          a.nav-link(href='#' data-scroll-nav='1') Servicios
         li.nav-item
-          a.nav-link(href='#' data-scroll-nav='2') Portfolio
+          a.nav-link(href='#' data-scroll-nav='2') Nosotros
         li.nav-item
-          a.nav-link(href='#' data-scroll-nav='3') Team
+          a.nav-link(href='#' data-scroll-nav='3') Estadísticas
         li.nav-item
-          a.nav-link(href='#' data-scroll-nav='4') Price
+          a.nav-link(href='#' data-scroll-nav='4') Clientes
         li.nav-item
-          a.nav-link(href='#' data-scroll-nav='5') Blog
+          a.nav-link(href='#' data-scroll-nav='5') Nuestro Equipo
         li.nav-item
-          a.nav-link(href='#' data-scroll-nav='6') Contact
+          a.nav-link(href='#' data-scroll-nav='6') Contáctanos
 //
   End Navbar ====
   =======================================
 //
   =====================================
   ==== Start Header
-header.header.valign.wave.bg-img(data-scroll-index='0' data-overlay-dark='7' data-background='img/bg1.jpg' data-stellar-background-ratio='0.5')
+header.header.valign.wave.bg-img(data-scroll-index='0' data-overlay-dark='7' data-background='img2/video-bg.jpg' data-stellar-background-ratio='0.5')
   .container
-    .text-center.caption.mt-30
-      h4 We Are
-      h1 Big Digital Agency
+    .text-center.caption.mt-30.justify-content-end
+      h1 Finsolred
+      h4 Red de soluciones financieras
       .row
         .offset-md-1.col-md-10.offset-lg-2.col-lg-8
           p
-            | We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design &amp; web development services.
-      a.butn.butn-light.mt-30(href='#0')
-        span Get Started
+            | Finsolred es una empresa dedicada a la gestión de cobranzas, captaciones y colocación de productos mediante call center y recuperacion en terreno, con cartera financiera y de retail.
+      a.butn.butn-light.mt-30(href='#' data-scroll-nav='1')
+        span Conócenos
 //
   End Header ====
   =======================================
+
 //
   =====================================
-  ==== Start Hero
+  ==== Start Servicios
 section.hero(data-scroll-index='1')
   .section-padding.pos-re
     .container
       .row
         .offset-lg-2.col-lg-8.offset-md-1.col-md-10.text-center.mb-80
           h4.extra-title
-            | About Our 
-            span Creative
-            |  Agency
+            | Nuestros 
+            span Servicios
           p
-            | Lorem Ipsum is simply dummy text of the printing and type setting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries.
+            | Nuestra prioridad son nuestros clientes, nuestro objetivo ser ser los mejores.
         .feat-item.mb-md50.col-lg-4
           .text-center
-            span.icon.icon-basic-anchor
-            h5 Web Design
+            span.icon.icon-basic-info
+            h5 Soporte en línea
             h6 Modern &amp; Clean Design
-            p Lorem Ipsum is simply dummy text of the printing and type setting industry
+            p Contáctanos por medio de nuestro chat, uno de nuestros agentes se comunicará contigo a la brevedad
         .feat-item.active.mb-md50.col-lg-4
           .text-center
-            span.icon.icon-basic-pencil-ruler
-            h5 Development
+            span.icon.icon-basic-clock
+            h5 Soporte 24/7
             h6 Web &amp; Mobile Development
-            p Lorem Ipsum is simply dummy text of the printing and type setting industry
+            p Nuestro Bot te ayudara con tus dudas cuando nuestros agentes no esten disponibles.
         .feat-item.col-lg-4
           .text-center
-            span.icon.icon-basic-cards-diamonds
-            h5 Branding
+            span.icon.icon-basic-calculator
+            h5 Gestión de cobranzas
             h6 Logo &amp; Motion Design
-            p Lorem Ipsum is simply dummy text of the printing and type setting industry
+            p Te ayudaremos a gestionar tus deudas pendientes de las diferentes empresas aliadas, con el fin de mejorar tus facilidades de pago
     .curve.curve-gray-b.curve-bottom
+//
+  End Servicios ====
+  =======================================
+
+//
+  =====================================
+  ==== Start Nosotros
+section.hero(data-scroll-index='2')
   .tabs-section.section-padding.bg-gray
     .container
       .row
         ul#pills-tab.col-md-12.nav.nav-pills.tabs(role='tablist')
           li.nav-item.one.active
-            a#pills-home-tab.nav-link.active(data-toggle='pill' href='#tab1' role='tab' aria-controls='tab1' aria-selected='true') About Us
+            a#pills-home-tab.nav-link.active(data-toggle='pill' href='#tab1' role='tab' aria-controls='tab1' aria-selected='true') Acerca de Nosotros
           li.nav-item.two
-            a#pills-profile-tab.nav-link(data-toggle='pill' href='#tab2' role='tab' aria-controls='tab2' aria-selected='false') Our Mission
+            a#pills-profile-tab.nav-link(data-toggle='pill' href='#tab2' role='tab' aria-controls='tab2' aria-selected='false') Nuestra Misión
           li.nav-item.three
-            a#pills-contact-tab.nav-link(data-toggle='pill' href='#tab3' role='tab' aria-controls='tab3' aria-selected='false') Why Us?
+            a#pills-contact-tab.nav-link(data-toggle='pill' href='#tab3' role='tab' aria-controls='tab3' aria-selected='false') Nuestra Visión
         #pills-tabContent.tab-content.col-lg-12
           #tab1.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab')
             .row
               .left.col-lg-6
                 .about.box-white
-                  h5.title About Us
-                  h6.sub-title We Are A Creative Agency
+                  h5.title Finsolred
+                  h6.sub-title Somos una Agencia de Servicios Financieros
                   p
-                    | We&rsquo;re full service which means we&rsquo;ve got you covered on design and content right through to digital.
+                    | Ofrecer un servicio de alta calidad en cobranzas y contact center, con un equipo humano comprometido y capacitado, con sistemas innovadores para proveer soluciones a las necesidades de nuestros clientes.
                   // Skills
                   .skills.mt-40
                     .skill-item.mb-30
@@ -158,18 +166,20 @@ section.hero(data-scroll-index='1')
             .row
               .left.col-lg-6
                 .mission.box-white
-                  h5.title Our Mission
-                  h6.sub-title We Are A Creative Agency
+                  h5.title Nuestra Misión
+                  h6.sub-title Somos una Agencia de Servicios Financieros
                   p.mb-10
-                    b We&rsquo;re full service which means
-                    |  we&rsquo;ve got you covered on design and content right through to digital. You&rsquo;ll form a lasting relationship with us, 
-                    b collaboration is central to
-                    |  everything we do. 
-                    b We&rsquo;ll push you out of
-                    |                                             your comfort zone from time, but this is where you&rsquo;ll shine. Bottom line is we want you to succeed at Faculty.
+                    | Somos un 
+                    b equipo humano comprometido
+                    |  con la gestión de cartera. 
+                  p 
+                    | Entendemos la situación del cliente y le 
+                    b brindamos opciones para el mejor resultado 
+                    | posible de cobranza. 
                   p
-                    | You&rsquo;ll form a lasting relationship with us, collaboration is central to everything we do. We&rsquo;ll push you out of your comfort zone from time-to-time, but this is where you&rsquo;ll shine. Bottom line is we want you to
-                    | succeed at Faculty.
+                    | Nuestro trabajo mezcla 
+                    b talento humano y tecnología 
+                    | con un enfoque humano y de calidad.
               .col-lg-6.image
                 .img
                   img(src='img/3.jpg' alt='')
@@ -180,28 +190,22 @@ section.hero(data-scroll-index='1')
             .row
               .left.col-lg-6
                 .why-us.box-white
-                  h5.title Why Choose Us?
-                  h6.sub-title We Are A Creative Agency
+                  h5.title Nuestra Visión
+                  h6.sub-title Somos una Agencia de Servicios Financieros
                   p
-                    | We&rsquo;re full service which means we&rsquo;ve got you covered on design and content right through to digital.You&rsquo;ll form a lasting relationship with us, collaboration is central to everything we do.
-                  ul.feat.mt-30.row
-                    li.col-sm-4
-                      span.icon.icon-basic-display
-                      h6 Perfect Design
-                    li.col-sm-4
-                      span.icon.icon-basic-picture-multiple
-                      h6 Retina Ready
-                    li.col-sm-4
-                      span.icon.icon-basic-headset
-                      h6 Friendly Support
+                    | Para
+                    b  2022
+                    |  ser la Empresa de Gestión de Cartera más efectiva en el Ecuador, innovando en el mercado con soluciones tecnológicas prácticas e integradas con una información confiable y certera para entender al cliente y brindarle un servicio personalizado y de calidad, con un enfoque de apoyo y una comunicación sencilla y cálida, para que la experiencia del cliente supere las expectativas esperadas.
               .col-lg-6.image
                 .img.owl-carousel.owl-theme.carousel-single
                   img(src='img/4.jpg' alt='')
                   img(src='img/5.jpg' alt='')
                   img(src='img/2.jpg' alt='')
 //
-  End Hero ====
+  End Nosotros ====
   =======================================
+
+
 //
   =====================================
   ==== Start Process
@@ -254,7 +258,7 @@ section.hero(data-scroll-index='1')
 //
   =====================================
   ==== Start Works
-section.works.section-padding(data-scroll-index='2')
+section.works.section-padding(data-scroll-index='3')
   .container
     .row
       .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
@@ -366,6 +370,7 @@ section.works.section-padding(data-scroll-index='2')
 //
   End Works ====
   =======================================
+
 //
   =====================================
   ==== Start Why-us
@@ -403,7 +408,7 @@ section.works.section-padding(data-scroll-index='2')
 //
   =====================================
   ==== Start Teams
-section.team.section-padding(data-scroll-index='3')
+section.team.section-padding(data-scroll-index='4')
   .container
     .row
       .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
@@ -546,7 +551,7 @@ section.testimonials.section-padding.bg-img.bg-fixed.pos-re(data-overlay-dark='7
 //
   =====================================
   ==== Start Price
-section.price.section-padding.bg-gray.pos-re(data-scroll-index='4')
+section.price.section-padding.bg-gray.pos-re(data-scroll-index='5')
   .container
     .row
       .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
@@ -640,7 +645,7 @@ section.price.section-padding.bg-gray.pos-re(data-scroll-index='4')
 //
   =====================================
   ==== Start Blog
-section.blog.section-padding(data-scroll-index='5')
+section.blog.section-padding(data-scroll-index='6')
   .container
     .row
       .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
@@ -721,7 +726,7 @@ section.call-action.section-padding.bg-img.bg-fixed(data-overlay-dark='5' data-b
 //
   =====================================
   ==== Start Contact
-section.contact.section-padding(data-scroll-index='6')
+section.contact.section-padding(data-scroll-index='7')
   .container
     .row
       .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
