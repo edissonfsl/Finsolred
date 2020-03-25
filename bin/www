@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('finsolred-page:server');
+var debug = require('debug')('hbs-skeleton-example:server');
 var http = require('http');
 
 /**

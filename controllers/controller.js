@@ -8,18 +8,29 @@ const transporter = nodemailer.createTransport({
     port: 587,
     secure: false,
     auth: {
-        user: process.env.MAIL_USER,
-        pass: process.env.MAIL_PSSW
+        user: process.env.MAIL_USER || "edisson1407.test@gmail.com",
+        pass: process.env.MAIL_PSSW || "edi$$on1407.test"
     }
 });
 
 
+// renderizar la pagina home
 exports.index = function(req, res) {
     res.render('index');
 };
 
-exports.send_email = [
+// renderizar la pagina generic
+exports.generic = function(req, res) {
+    res.render('generic');
+};
 
+// renderizar la pagina elements
+exports.elements = function(req, res) {
+    res.render('elements');
+};
+
+// metodo para enviar correo
+exports.send_email = [
     check('name')
     .isLength({ min: 1 })
     .withMessage('Nombre es Requerido')
