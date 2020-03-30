@@ -59,10 +59,6 @@
     color: rgb(0, 0, 0);
     font-family: 'Venn-Medium', sans-serif;
   }
-  .texto-borde3 {
-    color: rgb(0, 0, 0);
-    font-family: 'Venn-Medium', sans-serif;
-  }
   .texto-borde2 {
 
     text-align: center;
@@ -103,6 +99,12 @@
 @media (max-width: 400px) {
     .d4 {
         border-left: 20px;
-        padding-left: 110px;
+        padding-left: 90px;
+    }
+}
+@media (max-width: 680px) {
+    .d4 {
+        border-left: 20px;
+        padding-left: 180px;
     }
 }

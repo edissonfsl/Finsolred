@@ -2321,8 +2321,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 700px) {
     .banner-area {
         background: url(../img/service-bgmovil.jpg) no-repeat center center ;
-        height: 700px !important
-    
+        border-bottom-width: 4060px;
+        height: 470px !important
     }
 }
 

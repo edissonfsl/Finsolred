@@ -59,10 +59,6 @@
     color: rgb(0, 0, 0);
     font-family: 'Venn-Medium', sans-serif;
   }
-  .texto-borde3 {
-    color: rgb(0, 0, 0);
-    font-family: 'Venn-Medium', sans-serif;
-  }
   .texto-borde2 {
 
     text-align: center;
@@ -79,7 +75,7 @@
 @media (max-width: 700px) {
     .d2 {
         border-left: 20px;
-        padding-left: 110px;
+        padding-left: 115px;
     }
 }
 
@@ -91,18 +87,18 @@
 @media (max-width: 700px) {
     .d3 {
         border-left: 20px;
-        padding-left: 110px;
+        padding-left: 130px;
     }
 }
 
-/*cobranzas*/
+/*telemarketing*/
 .d4{
     border-left: 20px;
     padding-left: 95px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
     .d4 {
         border-left: 20px;
-        padding-left: 110px;
+        padding-left: 130px;
     }
 }
